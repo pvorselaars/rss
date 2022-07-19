@@ -8,7 +8,6 @@ A very simple library to parse RSS feeds to Go structs.
 
 ### Todo
 
-- Parse optional elements of [RSS 2.0](https://www.rssboard.org/rss-specification) feeds
 - Parse [RSS 1.0](https://web.resource.org/rss/1.0/spec) feeds
 - Parse [Atom](https://xml2rfc.tools.ietf.org/public/rfc/html/rfc4287.html) feeds
 - Automated tests
