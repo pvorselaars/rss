@@ -4,15 +4,13 @@ A very simple library to parse RSS feeds to Go structs.
 
 ## Features
 
-- Parse all required elements of RSS 2.0 feeds
+- Parse RSS 2.0 feeds
 
 ### Todo
 
-- Parse all optional elements of RSS 2.0 feeds
-- Parse all required elements of RSS 1.0 feeds
-- Parse all optional elements of RSS 1.0 feeds
-- Parse all required elements of Atom feeds
-- Parse all optional elements of Atom feeds
+- Parse optional elements of RSS 2.0 feeds
+- Parse RSS 1.0 feeds
+- Parse Atom feeds
 - Automated tests
 
 ## Usage
