@@ -37,6 +37,61 @@ This library uses the following structs for channels and items.
 
 ```
 type Channel struct {
+	// required elements
+	Title       string
+	Link        string
+	Description string
+	Items       []Item
+
+	// almost all optional elements; `docs`, `cloud` and `textinput` ignored
+	Language  string
+	Copyright string
+	Editor    string
+	Webmaster string
+	Date      string
+	BuildDate string
+	Category  string
+	Generator string
+	TTL       int
+	SkipHours []int
+	SkipDays  []string
+	Image     Image
+}
+
+type Image struct {
+	URL         string
+	Title       string
+	Description string
+	Link        string
+	Width       uint
+	Height      uint
+}
+
+type Item struct {
+	Title       string
+	Link        string
+	Description string
+	Date        string
+	Author      string
+	Category    []string
+	Comments    string
+	Enclosures  []Enclosure
+	Guid        string
+	Source      Source
+}
+
+type Enclosure struct {
+	URL    string `xml:"url,attr"`
+	Length uint   `xml:"length,attr"`
+	Type   string `xml:"type,attr"`
+}
+
+type Source struct {
+	URL  string `xml:"url,attr"`
+	Name string `xml:",innerxml"`
+}
+
+type Channel struct {
 	Title       string
 	Link        string
 	Description string
