@@ -91,21 +91,5 @@ type Source struct {
 	Name string `xml:",innerxml"`
 }
 
-type Channel struct {
-	Title       string
-	Link        string
-	Description string
-	Items       []Item
-}
-
-type Item struct {
-	Title       string
-	Link        string
-	Description string
-	Date        string
-	Author      string
-	Category    []string
-}
-
 ```
 
